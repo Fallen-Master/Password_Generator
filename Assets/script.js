@@ -1,14 +1,22 @@
 // Assignment Code
 //make a function for generatePassword
-  var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-  var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+  var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+  var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
   var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
   var specialChar = [ "!", "#", "$", "%", "&", "(", ")", "*", "+", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]","\\", "^", "_", "{", "}", "~"];
 
 
 
 function generatePassword() {
+  var length = window.prompt("Password must between 8 to 128 characters long")
 
+  length = parseInt(length);
+
+  if (isNaN(length) || length < 8 || length > 128){
+ alert("Invalid password length. Please enter a number between 8 and 128.");
+    return;
+  }
+  if ()
 }
 
 
@@ -37,6 +45,7 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
 
 // GIVEN I need a new, secure password
 // WHEN I click the button to generate a password
