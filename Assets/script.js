@@ -13,10 +13,20 @@ function generatePassword() {
   length = parseInt(length);
 
   if (isNaN(length) || length < 8 || length > 128){
- alert("Invalid password length. Please enter a number between 8 and 128.");
     return;
-  }
-  if ()
+  };
+ 
+  var uppercasePrompt = window.confirm("Would you like to have uppercase characters?");
+
+  var lowercasePrompt = window.confirm("Would you like to have lowercase characters?");
+
+  var numbersPrompt = window.confirm("Would you like to have number characters?");
+
+  var specialCharPrompt = window.confirm("Would you like to have special characters?" );
+
+
+
+
 }
 
 
