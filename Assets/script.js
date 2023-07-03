@@ -13,6 +13,7 @@ function generatePassword() {
   length = length * 1;
 
   if (isNaN(length) || length < 8 || length > 128){
+    alert("That is not a number...")
     return;
   };
  
@@ -48,8 +49,13 @@ function generatePassword() {
     combine = combine.concat(specialChar)
   }
 
+ for ( var i = 0; i < length; i++){
+  var index = Math.floor(Math.random() * combine.length)
+  
+ }
 console.dir(combine)
 console.dir(combine.length)
+
 }
 
 
