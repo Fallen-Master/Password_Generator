@@ -25,8 +25,12 @@ function generatePassword() {
   var specialCharPrompt = window.confirm("Would you like to have special characters?" );
 
 
+  if(!uppercasePrompt && !lowercasePrompt && !numbersPrompt && !specialChar){
+    alert("Please select a minimum of one the charaters available")
+    return;
+  }
 
-
+  
 }
 
 
