@@ -33,27 +33,24 @@ function generatePassword() {
   var combine = ""
 
   if (uppercasePrompt == true) {
-    combine += uppercase
+    combine = combine.concat(uppercase)
   }
   
   if (lowercasePrompt == true){
-    combine += lowercase
+    combine = combine.concat(lowercase)
   }
 
   if(numbersPrompt == true){
-    combine += numbers
+    combine = combine.concat(numbers)
   }
 
-  if(specialChar == true){
-    combine += specialChar
+  if(specialCharPrompt == true){
+    combine = combine.concat(specialChar)
   }
+
 console.dir(combine)
 console.dir(combine.length)
 }
-
-
-
-
 
 
 //Get references to the #generate element
@@ -61,16 +58,8 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-
-
-  //We will write a finchion called generatePassword that will return a string. this string will be assigned to the password var
   var password = generatePassword();
-
-  // get reference to password dispay text
-  //references to password text
   var passwordText = document.querySelector("#password"); 
-
-  // change the value of the password display text to the string assigned to our password variable
   passwordText.value = password;
 
 }
