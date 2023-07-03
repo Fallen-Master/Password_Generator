@@ -1,16 +1,16 @@
 // Assignment Code
 //make a function for generatePassword
-  var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-  var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-  var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
-  var specialChar = [ "!", "#", "$", "%", "&", "(", ")", "*", "+", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]","\\", "^", "_", "{", "}", "~"];
+  var lowercase = [," a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+  var uppercase = [," A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+  var numbers = [," 1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+  var specialChar = [ ," !", "#", "$", "%", "&", "(", ")", "*", "+", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]","\\", "^", "_", "{", "}", "~"];
 
 
 
 function generatePassword() {
-  var length = window.prompt("Password must between 8 to 128 characters long")
+  var length = window.prompt("Password must be between 8 to 128 characters long")
 
-  length = parseInt(length);
+  length = length * 1;
 
   if (isNaN(length) || length < 8 || length > 128){
     return;
@@ -25,12 +25,30 @@ function generatePassword() {
   var specialCharPrompt = window.confirm("Would you like to have special characters?" );
 
 
-  if(!uppercasePrompt && !lowercasePrompt && !numbersPrompt && !specialChar){
-    alert("Please select a minimum of one the charaters available")
+  if(!uppercasePrompt && !lowercasePrompt && !numbersPrompt && !specialCharPrompt){
+    alert("Please confirm on of the options")
     return;
   }
 
+  var combine = ""
+
+  if (uppercasePrompt == true) {
+    combine += uppercase
+  }
   
+  if (lowercasePrompt == true){
+    combine += lowercase
+  }
+
+  if(numbersPrompt == true){
+    combine += numbers
+  }
+
+  if(specialChar == true){
+    combine += specialChar
+  }
+console.dir(combine)
+console.dir(combine.length)
 }
 
 
