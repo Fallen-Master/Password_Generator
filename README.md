@@ -7,14 +7,18 @@ ___
 - Allows users to choose a password length ranging from 8 to 128 characters.
 Provides options for including uppercase letters, lowercase letters, special characters, and numbers.
 - Generates passwords with a combination of selected character types to enhance security.
-
-___
-## Preview
-![image](./Assets/Password_Generator_test.jpg)
 ___
 ### Credit
 The Staff at Bootcamp Spot for creating the HTML, CSS and, starting the JavaScript.   
 [Rafael Gomez](https://github.com/Fallen-Master) made additional changes to the exsiting JavaScript.
+
+### Link
+[Password Generator](https://fallen-master.github.io/Password_Generator/) 
+
+___
+## Preview
+![image](./Assets/Password_Generator_test.jpg)
+
 ___
 ### License
 This project is licensed under the [MIT License](LICENSE).
