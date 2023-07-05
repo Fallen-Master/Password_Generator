@@ -9,7 +9,7 @@ function generatePassword() {
 
   if (isNaN(length) || length < 8 || length > 128){
     alert("Please choose a length between 8 and 128")
-    return;
+    return empty;
   };
   var uppercasePrompt = window.prompt ("Would you like to have uppercase characters yes or no?")
   if(uppercasePrompt.toLowerCase() !=="yes" && uppercasePrompt.toLowerCase()!=="no" ) {
