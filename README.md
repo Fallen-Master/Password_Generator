@@ -13,7 +13,7 @@ The Staff at Bootcamp Spot for creating the HTML, CSS and, starting the JavaScri
 [Rafael Gomez](https://github.com/Fallen-Master) made additional changes to the exsiting JavaScript.
 
 ### Link
-[Password Generator](https://fallen-master.github.io/Password_Generator/) 
+[Password Generator](https://fallen-master.github.io/Password_Generator/) [Github](https://github.com/Fallen-Master/Password_Generator)
 
 ___
 ## Preview
